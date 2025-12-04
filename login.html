@@ -78,33 +78,24 @@
     <script>
         document.getElementById('loginForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // Get form values
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
             
-            // Basic validation
             if (!email || !password) {
                 alert('Please fill in all fields');
                 return;
             }
-            
-            // Check password length
             if (password.length < 6) {
                 alert('Password must be at least 6 characters long');
                 return;
             }
-            
-            // Simple email validation
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
                 alert('Please enter a valid email address');
                 return;
             }
             
-            // In a real app, this would send data to a server
-            alert('Login successful! Redirecting to dashboard...');
-            // window.location.href = 'dashboard.html';
+            alert('Login successful! Redirecting to dashboard...')
         });
     </script>
 </body>
