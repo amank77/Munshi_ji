@@ -1,6 +1,5 @@
 @import url('common.css');
 
-/* Authentication pages */
 .auth-section {
   min-height: 100vh;
   display: flex;
@@ -122,8 +121,6 @@
 .home-link a:hover {
   color: #00f5a0;
 }
-
-/* Responsive design */
 @media (max-width: 768px) {
   .auth-section {
     padding: 130px 20px 60px;
