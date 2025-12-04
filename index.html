@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munshi Ji - Personal Finance Manager</title>
+    <link rel="stylesheet" href="index-styles.css">
+</head>
+<body>
+    
+    <!-- Header - navigation -->
+    <header class="header">
+        <div class="container"> 
+            <div class="logo">
+                <h2>Munshi Ji</h2>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                ☰
+            </div>
+        </div>
+    </header>
+
+    <!-- Main hero section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Take Control of Your Finances</h1>
+                <p>Track spending, set budgets, and achieve your financial goals with our intuitive finance manager</p>
+                <div class="hero-buttons">
+                    <button class="btn" onclick="window.location.href='register.html'">Get Started - It's Free</button>
+                    <button class="btn btn-outline" onclick="window.location.href='#features'">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Smart Budgeting Made Simple</h2>
+                <p>Everything you need to take control of your finances in one powerful platform</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Expense Tracking</h3>
+                    <p>Automatically categorize your spending and see where your money goes</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Budget Goals</h3>
+                    <p>Set and monitor personalized budget targets for every category</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Financial Insights</h3>
+                    <p>Visualize your financial patterns with interactive charts and reports</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Bank-Level Security</h3>
+                    <p>Your financial data is protected with military-grade encryption</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>Start Your Financial Journey in 3 Easy Steps</h2>
+                <p>Getting started with Munshi Ji is simple and takes less than 2 minutes</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Connect</h3>
+                    <p>Link your bank accounts or manually add your transactions</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Track</h3>
+                    <p>Monitor your spending in real-time with our dashboard</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Achieve</h3>
+                    <p>Reach your financial goals faster with personalized insights</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready to Take Control of Your Finances?</h2>
+            <p>Join over Millions users who have transformed their financial lives with Munshi Ji</p>
+            <button class="btn" onclick="window.location.href='register.html'">Sign Up Free</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Munshi Ji</h2>
+                    <p>Simple budget tracking for everyone</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="register.html">Register</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#how-it-works">How It Works</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Munshi Ji. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Simple mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('active');
+            this.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+        });
+    </script>
+</body>
+</html>
